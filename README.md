@@ -18,3 +18,5 @@ siguientes dependencias:
 - Cssnano
 - Autoprefixer
 - Postcss
+
+Se puede ver en funcionamiento aquí: https://festival-musica-edm-miguel-angel.netlify.app/
