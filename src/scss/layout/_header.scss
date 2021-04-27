@@ -1,0 +1,46 @@
+.header {
+    background-color: $verde;
+
+    .contenido-header {
+        padding: ($separacion / 2) 0;
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;    
+        };
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 1rem;
+
+        a {
+            color: $blanco;
+        }
+        
+        @include tablet {
+            margin-bottom: 0;
+        }
+    }
+
+    &.fijo {
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 .3rem .4rem #444;
+    }
+}
+
+.navegacion-principal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    text-align: center;
+
+    a {
+        color: $blanco;
+        font-size: 2rem;
+        &:hover {
+            color: $amarillo;
+        }
+    }   
+}
